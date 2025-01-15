@@ -1,0 +1,357 @@
+#sessao-perfil {
+  width: 100%;
+  height: 100vh;
+}
+
+#imagem-fundo {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  width: 100%;
+  height: 35vh;
+  filter: contrast(125%);
+
+  mask-image: linear-gradient(var(--cor-fundo),var(--cor-fundo),var(--cor-fundo),transparent);
+}
+
+#container-foto-perfil {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+} 
+
+#foto-perfil {
+  width: 130px;
+  height: 150px;
+
+  border-radius: 10px;
+  border:10px solid var(--cor-base);
+}
+
+#container-icones {
+  margin:  1rem 0rem 0rem 0rem ;
+  display:flex;
+  flex-direction:row;
+  justify-content:space-evenly;
+}
+
+.icones {
+  width: 1.2rem;
+}
+
+#container-perfil {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  margin: 6rem 2rem;
+}
+
+#perfil {
+  display:flex;
+  flex-direction:column-reverse;
+}
+
+#titulo-perfil h1 {
+  font-family: 'Orbitron',sans-serif;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+#titulo-perfil h3 {
+  font-family: 'Turrent Road',sans-serif;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+#descricao-perfil p{
+  font-size: 13px;
+  text-align: justify;
+  margin-top: 1rem;
+}
+
+/* Celular P */ 
+@media only screen and (min-width: 320px)  {
+  #foto-perfil {
+    width: 160px;
+    height: 180px;
+  }
+  .icones {
+    width: 1.5rem;
+  }
+  #titulo-perfil h1 {
+    font-size: 1.6rem;
+  }
+  #titulo-perfil h3 {
+    font-size: 1.2rem;
+  }
+  #descricao-perfil p{
+    font-size: 18px;  
+  }
+}
+
+/* Celular M */ 
+@media only screen and (min-width: 321px)  {
+  #foto-perfil {
+    width: 170px;
+    height: 190px;
+  }
+  .icones {
+    width: 1.8rem;
+  }
+  #titulo-perfil h1 {
+    font-size: 1.8rem;
+  }
+  #titulo-perfil h3 {
+    font-size: 1.3rem;
+  }
+  #descricao-perfil p{
+    font-size: 19px;  
+  }
+}
+
+/* Celular G */ 
+@media only screen and (min-width: 376px)  {
+  #foto-perfil {
+    width: 180px;
+    height: 200px;
+  }
+  .icones {
+    width: 2rem;
+  }
+  #titulo-perfil h1 {
+    font-size: 2.2rem;
+  }
+  #titulo-perfil h3 {
+    font-size: 1.5rem;
+  }
+  #descricao-perfil p{
+    font-size: 20px;  
+  }
+}
+
+/* Tablet */ 
+@media only screen and (min-width: 426px)  {
+ 
+}
+
+/* Laptop P - 1*/
+@media only screen and (min-width: 769px)  {
+  #imagem-fundo {
+    margin-left: 20%;
+    margin-right: 0;
+
+    width: 80%;
+    height: 80vh;
+  }
+  #container-foto-perfil {
+    margin-bottom: 0;
+    padding: 1rem;
+  } 
+  #container-titulo-perfil {
+    margin-top: 1rem;
+    width: 60%;
+  }
+  #container-icones { 
+    margin: 2.5rem 0rem 0rem 0rem;
+    width: 100%;
+  }
+  .icones {
+    width: 2.5rem;
+  }
+  #perfil {
+    display:flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+  }
+  #container-perfil {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+   
+    margin: 8rem 2rem;  
+  }
+  #titulo-perfil h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
+  #titulo-perfil h3 {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+  #descricao-perfil p{
+    font-size: 23px;
+    text-align: justify;
+    margin: 0;
+  }  
+}
+
+/* Laptop P - 2*/
+@media only screen and (min-width: 875px)  {
+  #foto-perfil {
+    width: 200px;
+    height: 220px; 
+  }
+  .icones {
+    width: 2.8rem;
+  }
+  #titulo-perfil h1 {
+    font-size: 3.3rem;
+  }
+  #titulo-perfil h3 {
+    font-size: 2.4rem;
+  }
+ }
+
+ /* Laptop P - 3*/
+@media only screen and (min-width: 968px)  {
+  #foto-perfil {
+    width: 220px;
+    height: 240px; 
+  }
+  .icones {
+    width: 2.9rem;
+  }
+  #titulo-perfil h1 {
+    font-size: 3.8rem;
+  }
+  #titulo-perfil h3 {
+    font-size: 2.8rem;
+  }
+}
+
+/* Laptop G - 1 */
+@media only screen and (min-width: 1025px) {
+  #foto-perfil {
+    width: 220px;
+    height: 240px; 
+  }
+  .icones {
+    width: 3rem;
+  }
+  #titulo-perfil h1 {
+    font-size: 4rem;
+  }
+  #titulo-perfil h3 {
+    font-size: 3rem;
+  }
+} 
+
+/* Laptop G - 2*/
+@media only screen and (min-width: 1141px) {
+  #foto-perfil {
+    width: 240px;
+    height: 260px;  
+  }
+  .icones {
+    width: 3.5rem;
+  }
+  #titulo-perfil {
+    margin-top: 0.5rem;
+  }
+  #container-icones { 
+    margin: 3rem 0rem 0rem 0rem;
+  }
+  #container-perfil {
+    gap: 1rem;
+  }
+  #titulo-perfil h1 {
+    font-size: 4.5rem;
+  }
+  #titulo-perfil h3 {
+    font-size: 3.2rem;
+  }
+  #descricao-perfil p{
+    font-size: 25px;
+  }  
+
+}
+
+/* Laptop G - 3*/
+@media only screen and (min-width: 1256px) {
+  #foto-perfil {
+    width: 260px;
+    height: 280px;  
+  }
+  .icones {
+    width: 3.8rem;
+  }
+  #container-icones {
+    margin: 3.5rem 0rem 0rem 0rem;
+  }
+  #container-perfil {
+    gap: 2rem;
+  }
+  #titulo-perfil h1 {
+    font-size: 5rem;
+  }
+  #titulo-perfil h3 {
+    font-size: 3.5rem;
+  }
+  #descricao-perfil p{
+    font-size: 28px;
+  }  
+}
+
+/* Laptop G - 4*/
+@media only screen and (min-width: 1373px) {
+  #foto-perfil {
+    width: 280px;
+    height: 300px;
+  }
+  .icones {
+    width: 4rem;
+  }
+  #container-icones { 
+    margin: 4rem 0rem 0rem 0rem;
+  }
+  #container-perfil {
+    gap: 3rem;
+  }
+  #titulo-perfil h1 {
+    font-size: 5.5rem;
+  }
+  #titulo-perfil h3 {
+    font-size: 4rem;
+  }
+  #descricao-perfil p{
+    font-size: 32px;
+  }  
+}
+
+/* Monitor PC */
+@media only screen and (min-width: 1441px) {
+
+  /*#foto {
+    width: 280px;
+    height: 300px;
+  }
+
+  .icones {
+    width: 4rem;
+  }
+
+  #container-icones { 
+    margin: 4rem 0rem 0rem 0rem;
+  }
+
+  #container-perfil {
+    gap: 3rem;
+  }
+
+  #titulo-perfil h1 {
+    font-size: 5.5rem;
+  }
+  #titulo-perfil h3 {
+    font-size: 4rem;
+  }
+  #descricao-perfil p {
+    font-size: 32px;
+  }  
+*/
+
+}
