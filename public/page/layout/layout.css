@@ -1,0 +1,56 @@
+@import url('../partials/Header/header.css');
+@import url('../partials/Section-Profile/section-profile.css');
+
+@font-face {
+  font-family: 'Turrent Road';
+  src: url('../../assets/fonts/TurretRoad-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Orbitron';
+  src: url('../../assets/fonts/Orbitron-Bold.ttf') format('truetype');
+}
+
+:root {
+  --cor-base: #174f00;
+  --cor-mediana: #061D00;
+  --cor-fundo: #000;
+
+  --cor-fonte: #d0fabd;
+
+  --cor-gradiente: linear-gradient(to right,var(--cor-fundo),var(--cor-fundo),var(--cor-mediana),var(--cor-base),var(--cor-base));
+} 
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: normal;
+
+  color: var(--cor-fonte);
+  text-decoration: none;
+}
+
+body {
+  background-color: var(--cor-fundo);
+}
+
+/*#copyright {
+  background-color: var(--cor-mediana);
+
+  position: static;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  margin-top: auto;
+
+  display:flex;
+  justify-content: space-between;
+  text-align:center;
+
+  padding: 10px;
+} */
