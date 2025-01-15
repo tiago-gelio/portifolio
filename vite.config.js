@@ -1,7 +1,7 @@
 import { defineConfig } from "vite"
 
 export default defineConfig({
- // base: "/portifolio",
+ base: "/",
 // permitir conexões externas:
   server: { host: true}
 })
